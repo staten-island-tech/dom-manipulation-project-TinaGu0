@@ -9,5 +9,10 @@ const DOMSelectors = {
 };
 DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault(); //when submit happens, don't refresh page
-    console.log(DOMSelectors.firstName.value); //value is the valuet hat the user types in 
+
+
+    DOMSelectors.form.insertAdjacentHTML(
+        "afterbegin", 
+        '<div class="card"><h2 class="card-header">${DOMSelectors.firstName.value}</h2></div>'
+    );
 });

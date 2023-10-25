@@ -5,10 +5,7 @@ body {
 .text {
     font-size: 18px;
     font-family: sans-serif;
-}
-
-.center {
-    text-align: center;
+    padding-right: 20%;
 }
 
 .margin {
@@ -25,9 +22,25 @@ body {
 
 .card {
     background-color: aliceblue;
-    width: 40%;
+    width: 50%;
     height:35%;
     border-radius: 10px;
+    margin-top: 50px;
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+
+.header {
     text-align: center;
 }
 
+.img {
+    float: right;
+    height: 70%;
+    padding-right: 5%;
+}
+
+.button {
+    margin-top: 20%;
+    margin-left: 10%;
+}

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="center">Make an ID Card!</h1>
-    <h3 class="center">(objectively better than our school's)</h3>
+    <h1 class="header">Make an ID Card!</h1>
+    <h3 class="header">(objectively better than our school's)</h3>
     <form id="form">
         <div class="margin">
             <label for="firstName" class="text">First Name</label>
@@ -19,7 +19,7 @@
         </div>
         <div class="margin">
             <label for="DOB" class="text">Date of Birth</label>
-            <input type="text" id="DOB">
+            <input type="date" id="DOB">
         </div>
         <div class="margin">
             <label for="school" class="text">Current School</label>
@@ -27,7 +27,11 @@
         </div>      
         <div class="margin">
             <label for="grad" class="text">Graduation Year</label>
-            <input type="text" id="grad">
+            <input type="number" id="grad">
+        </div>
+        <div class="margin">
+            <label for="pic" class="text">Identification Picture</label>
+            <input type="link" id="pic">
         </div>
         <input type="submit" value="Enter"/>
     </form>

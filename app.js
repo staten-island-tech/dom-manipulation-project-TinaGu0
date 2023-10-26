@@ -24,16 +24,11 @@ DOMSelectors.form.addEventListener("submit", function (event){
         <h2 class="header">${DOMSelectors.school.value}</h2><img class="img" src="${DOMSelectors.pic.value}" />
         <h3>Date of Birth: ${DOMSelectors.DOB.value}</h3>
         <h3>Year of Graduation: ${DOMSelectors.grad.value}</h3>
-        <button class="button">Remove Card</button>
+        <button class="button">REMOVE</button>
         </div>`
     );
+   rmve.addEventListener("click", function(){
+    rmve.remove()
+    });
+    
 });
-
-DOMSelectors.form.addEventListener("click", function(event){
-    DOMSelectors.form.
-})
-
-/* DOMSelectors.firstName.addEventListener("click", function() {
-    let firstName = DOMSelectors.firstName.value
-    console.log(firstName)
-}); */

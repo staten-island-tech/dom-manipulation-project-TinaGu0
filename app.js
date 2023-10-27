@@ -27,8 +27,12 @@ DOMSelectors.form.addEventListener("submit", function (event){
         <button class="button">REMOVE</button>
         </div>`
     );
-   rmve.addEventListener("click", function(){
-    rmve.remove()
-    });
-    
 });
+
+function remove() {
+    let buttons =  document.querySelectorAll("button");
+    buttons.forEach((button)=> button.addEventListener("click" , function(event) {
+        console.log(event.target.parentElement);
+    }));
+ }
+     

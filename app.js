@@ -32,7 +32,6 @@ DOMSelectors.form.addEventListener("submit", function (event){
 function remove() {
     let buttons =  document.querySelectorAll("button");
     buttons.forEach((button)=> button.addEventListener("click" , function(event) {
-        console.log(event.target.parentElement);
     }));
  }
      

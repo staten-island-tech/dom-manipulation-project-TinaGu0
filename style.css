@@ -1,34 +1,46 @@
+.parent {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+
+}
+
+body,
+html,
+* {
+    font-size: 25px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 0px;
+}
+
+.IDcard {
+    height: auto;
+    width: 21vw;
+    background-color: #fff2e6;
+    border-radius: 25px;
+    justify-content: space-between;
+    text-align: center;
+    display: flexbox;
+}
+
 body {
     background-color: #6f7e96;
 }
 
 .text {
-    font-size: 18px;
+    font-size: 20px;
     font-family: sans-serif;
-    padding-right: 50%;
 }
 
 .margin {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #aebacf;
-    width: 18%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
+    width: 30%;
+    border-radius: 20px
 }
 
-.card {
-    background-color: aliceblue;
-    width: 40%;
-    height:35%;
-    border-radius: 10px;
-    margin-top: 50px;
-    padding-top:10px;
-    padding-bottom: 50px;
-}
 
 .header {
     text-align: center;
@@ -36,11 +48,7 @@ body {
 
 .img {
     float: right;
-    height: 70%;
-    padding-right: 5%;
+    height: 35%;
+    align-items: center;
 }
 
-.button {
-    margin-top: 10%;
-    margin-left: 10%;
-}

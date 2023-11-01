@@ -9,6 +9,7 @@ const DOMSelectors = {
     pic:document.getElementById("pic"),
 }
  
+<<<<<<< HEAD
 DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault();
     makeCard();
@@ -42,3 +43,28 @@ function clearValues() {
     DOMSelectors.grad.value=("")
     DOMSelectors.pic.value=("")
 };
+=======
+
+
+DOMSelectors.form.addEventListener("submit", function (event){
+    event.preventDefault();
+    DOMSelectors.form.insertAdjacentHTML("beforeend", 
+        `<div class="resultCard">
+        <h1 class="header">${DOMSelectors.firstName.value} ${DOMSelectors.lastName.value}</h1>
+        <h2 class="header">${DOMSelectors.school.value}</h2><img class="img" src="${DOMSelectors.pic.value}" />
+        <h3>Date of Birth: ${DOMSelectors.DOB.value}</h3>
+        <h3>Year of Graduation: ${DOMSelectors.grad.value}</h3>
+        <button id="remove">REMOVE</button>
+        </div>`
+    );
+    remove()
+});
+
+function remove() {
+    let buttons =  document.querySelectorAll("remove");
+    buttons.forEach((remove)=> remove.addEventListener("click" , function(event) {
+        buttons.parentElement.remove(event);
+    }));
+ }
+     
+>>>>>>> c115c2b83ec31416d1637adbb71a842c4f8406eb

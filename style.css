@@ -41,6 +41,18 @@ body {
     border-radius: 20px
 }
 
+<<<<<<< HEAD
+=======
+.resultCard {
+    background-color: aliceblue;
+    width: 40%;
+    height:35%;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+>>>>>>> c115c2b83ec31416d1637adbb71a842c4f8406eb
 
 .header {
     text-align: center;

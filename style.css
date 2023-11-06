@@ -15,7 +15,7 @@ html,
 }
 
 .IDcard {
-    height: 20vw;
+    height: auto;
     width: 30%;
     background-color: #fff2e6;
     border-radius: 25px;

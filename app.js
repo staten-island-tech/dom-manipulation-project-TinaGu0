@@ -7,13 +7,14 @@ const DOMSelectors = {
     school:document.getElementById("school"),
     grad:document.getElementById("grad"),
     pic:document.getElementById("pic"),
-    Cards:document.getElementById("Cards")
+    Cards:document.getElementById("Cards"),
 };
  
 DOMSelectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
     makeCard();
     clearValues();
+    removeCard()
   });
 
 function makeCard() {
@@ -32,14 +33,13 @@ function makeCard() {
         <h3>Year of Graduation: ${gra}</h3>
         <button class="clearButton">REMOVE</button>
         </div>`);
-    removeCard();
 };
 
-  function removeCard(Cards) {
-    const removeButtons = Cards.querySelectorAll(".clearButton");
+  function removeCard() {
+    const removeButtons = document.querySelectorAll(".clearButton");
     removeButtons.forEach(function (button) {
       button.addEventListener("click", function () {
-        DOMSelectors.Cards.remove();
+        button.parentElement.remove();
       });
     });
   };

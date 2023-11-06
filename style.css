@@ -15,8 +15,8 @@ html,
 }
 
 .IDcard {
-    height: auto;
-    width: 21vw;
+    height: 20vw;
+    width: 30%;
     background-color: #fff2e6;
     border-radius: 25px;
     justify-content: space-between;
@@ -41,8 +41,6 @@ body {
     border-radius: 20px
 }
 
-<<<<<<< HEAD
-=======
 .resultCard {
     background-color: aliceblue;
     width: 40%;
@@ -52,7 +50,6 @@ body {
     padding-top:10px;
     padding-bottom: 50px;
 }
->>>>>>> c115c2b83ec31416d1637adbb71a842c4f8406eb
 
 .header {
     text-align: center;
